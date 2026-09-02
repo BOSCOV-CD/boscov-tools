@@ -6,6 +6,12 @@ Official home of **BOSCOV** performance tools — free for Windows & BlueStacks.
 
 ## Featured
 
+### BOSCOV FPS Injector v1.0 — SUPER (NEW)
+The SUPER auto-booster for BlueStacks 5: detects your CPU, RAM and GPU, then injects the highest stable FPS settings **by itself** — up to 240 FPS, high-FPS mode ON, vsync OFF, HD-Player on High CPU priority.
+```
+powershell -File "BOSCOV FPS Injector.ps1" -Revert
+```
+
 ### BOSCOV Boost v1.0
 RAM / startup / background / telemetry booster for Windows 10 & 11.
 - Auto-elevates to Administrator (UAC prompt)
