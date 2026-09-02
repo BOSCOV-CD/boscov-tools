@@ -1,39 +1,90 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BOSCOV Boost &amp; BOSCOV Optimizer - Free Windows Performance Tools</title>
-<meta name="description" content="BOSCOV Boost: RAM, startup and telemetry booster for Windows 10/11. BOSCOV Optimizer: BlueStacks 5 FPS and smoothness optimizer. Free, safe, with full backup and one-click revert.">
+<title>BOSCOV Boost &amp; BOSCOV Optimizer — Free Windows &amp; BlueStacks Performance Tools</title>
+<meta name="description" content="Official BOSCOV site. BOSCOV Boost: RAM, startup &amp; telemetry booster for Windows 10/11. BOSCOV Optimizer: BlueStacks 5 FPS &amp; smoothness optimizer. Free, safe, one-click revert.">
 <meta name="author" content="BOSCOV">
+<meta name="keywords" content="BOSCOV, BOSCOV Boost, BOSCOV Optimizer, Windows booster, BlueStacks FPS, PC optimizer">
+<link rel="canonical" href="https://boscov-cd.github.io/boscov-tools/">
+<meta property="og:site_name" content="BOSCOV Tools">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://boscov-cd.github.io/boscov-tools/">
 <meta property="og:title" content="BOSCOV Boost &amp; BOSCOV Optimizer">
-<meta property="og:description" content="Free Windows performance tools by BOSCOV. Boost your PC, boost your FPS.">
+<meta property="og:description" content="Free Windows &amp; BlueStacks performance tools by BOSCOV. Boost your PC, boost your FPS.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BOSCOV Boost &amp; BOSCOV Optimizer">
+<meta name="twitter:description" content="Free Windows &amp; BlueStacks performance tools by BOSCOV.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "BOSCOV Boost",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "BOSCOV" },
+  "url": "https://boscov-cd.github.io/boscov-tools/"
+}
+</script>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Segoe UI',Arial,sans-serif; background:#0b0f1a; color:#e8eaf0; line-height:1.6; }
-  header { text-align:center; padding:70px 20px 40px; background:linear-gradient(135deg,#0b0f1a 0%,#14213d 100%); }
-  header h1 { font-size:3em; letter-spacing:4px; color:#4fc3f7; }
-  header p { color:#9aa4b8; margin-top:10px; font-size:1.2em; }
-  main { max-width:900px; margin:0 auto; padding:40px 20px; }
+  header { text-align:center; padding:80px 20px 50px; background:linear-gradient(135deg,#0b0f1a 0%,#14213d 100%); border-bottom:1px solid #1a2235; }
+  header h1 { font-size:3.2em; letter-spacing:5px; color:#4fc3f7; }
+  header p { color:#9aa4b8; margin-top:10px; font-size:1.25em; }
+  .badges { margin-top:16px; }
+  .badges span { display:inline-block; background:#1d2b45; color:#7ed4f9; border-radius:20px; padding:4px 16px; font-size:.85em; margin:4px; }
+  nav { text-align:center; padding:18px; background:#0e1424; border-bottom:1px solid #1a2235; position:sticky; top:0; }
+  nav a { color:#9fe0ff; text-decoration:none; margin:0 14px; font-size:.95em; }
+  nav a:hover { color:#fff; }
+  main { max-width:1000px; margin:0 auto; padding:40px 20px; }
+  h2.section { text-align:center; color:#fff; font-size:1.8em; margin:30px 0 8px; letter-spacing:1px; }
+  p.section-sub { text-align:center; color:#8a94a8; margin-bottom:30px; }
   .card { background:#121829; border:1px solid #223; border-radius:14px; padding:30px; margin-bottom:30px; }
   .card h2 { color:#4fc3f7; margin-bottom:12px; }
+  .card h3 { color:#c0c8d8; margin-bottom:6px; }
   .card ul { margin:12px 0 12px 22px; color:#b8c0d0; }
-  .tag { display:inline-block; background:#1d2b45; color:#4fc3f7; border-radius:20px; padding:2px 12px; font-size:.85em; margin-right:6px; }
+  .tag { display:inline-block; background:#1d2b45; color:#4fc3f7; border-radius:20px; padding:2px 12px; font-size:.85em; margin-right:6px; margin-bottom:6px; }
   .dl { display:inline-block; margin-top:14px; background:#4fc3f7; color:#0b0f1a; font-weight:bold; text-decoration:none; padding:10px 26px; border-radius:8px; }
   .dl:hover { background:#7ed4f9; }
+  .dl.ghost { background:transparent; color:#4fc3f7; border:1px solid #2a5a78; margin-left:10px; }
+  .dl.ghost:hover { border-color:#4fc3f7; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+  .build { background:#121829; border:1px solid #223; border-radius:14px; padding:24px; }
+  .build h3 { color:#4fc3f7; margin-bottom:8px; }
+  .build p { color:#9aa4b8; font-size:.95em; }
+  .build a { color:#7ed4f9; text-decoration:none; font-size:.9em; }
+  .build a:hover { text-decoration:underline; }
+  .steps li { margin:14px 0; color:#b8c0d0; }
   .note { color:#8a94a8; font-size:.92em; margin-top:10px; }
-  footer { text-align:center; color:#5a6478; padding:30px; border-top:1px solid #1a2235; }
   code { background:#1a2235; padding:2px 8px; border-radius:5px; color:#9fe0ff; }
+  footer { text-align:center; color:#5a6478; padding:34px 20px; border-top:1px solid #1a2235; }
+  footer a { color:#7ed4f9; text-decoration:none; }
 </style>
 </head>
 <body>
 <header>
   <h1>BOSCOV</h1>
   <p>Free performance tools for Windows &amp; BlueStacks</p>
+  <div class="badges">
+    <span>⚡ PC Booster</span><span>🎮 FPS Optimizer</span><span>🔒 Backup &amp; Revert</span><span>🆓 100% Free</span>
+  </div>
 </header>
+<nav>
+  <a href="#tools">Tools</a>
+  <a href="#safety">How to run</a>
+  <a href="#builds">All BOSCOV builds</a>
+  <a href="#why">Why BOSCOV</a>
+</nav>
 <main>
+
+  <h2 class="section" id="tools">Featured Tools</h2>
+  <p class="section-sub">Built by BOSCOV — free to download, free to share.</p>
+
   <div class="card">
-    <h2>&#9889; BOSCOV Boost v1.0</h2>
+    <h2>⚡ BOSCOV Boost v1.0</h2>
     <span class="tag">Windows 10/11</span><span class="tag">RAM</span><span class="tag">Startup</span><span class="tag">Telemetry</span>
     <p>One script that speeds up your PC: trims background services, disables Windows telemetry, optimizes startup and memory usage.</p>
     <ul>
@@ -42,23 +93,88 @@
       <li>Undo everything with one command: <code>powershell -File "BOSCOV Boost.ps1" -Revert</code></li>
     </ul>
     <a class="dl" href="https://github.com/BOSCOV-CD/boscov-tools/raw/main/BOSCOV%20Boost.ps1">Download BOSCOV Boost</a>
-    <p class="note">100% local - no telemetry, no data collection, free to share.</p>
+    <a class="dl ghost" href="https://github.com/BOSCOV-CD/boscov-tools">View on GitHub</a>
+    <p class="note">100% local — no telemetry, no data collection, free to share.</p>
   </div>
+
   <div class="card">
-    <h2>&#127918; BOSCOV Optimizer v1.0</h2>
+    <h2>🎮 BOSCOV Optimizer v1.0</h2>
     <span class="tag">BlueStacks 5</span><span class="tag">FPS</span><span class="tag">Smoothness</span>
-    <p>Makes BlueStacks 5 run smoother and hit higher FPS on any PC - tuned registry, driver and emulator settings.</p>
+    <p>Makes BlueStacks 5 run smoother and hit higher FPS on any PC — tuned registry, driver and emulator settings.</p>
     <ul>
       <li>Auto-elevates to Administrator (UAC prompt)</li>
       <li>Backs up every file/registry value it changes</li>
       <li>Undo everything with one command: <code>powershell -File "BOSCOV Optimizer.ps1" -Revert</code></li>
     </ul>
     <a class="dl" href="https://github.com/BOSCOV-CD/boscov-tools/raw/main/BOSCOV%20Optimizer.ps1">Download BOSCOV Optimizer</a>
-    <p class="note">100% local - no telemetry, no data collection, free to share.</p>
+    <a class="dl ghost" href="https://github.com/BOSCOV-CD/boscov-tools">View on GitHub</a>
+    <p class="note">100% local — no telemetry, no data collection, free to share.</p>
   </div>
+
+  <h2 class="section" id="safety">How to run</h2>
+  <p class="section-sub">Two minutes, no installation.</p>
+  <div class="card">
+    <ol class="steps">
+      <li><strong>Download</strong> the tool you want above.</li>
+      <li><strong>Right-click</strong> the file → <strong>Run with PowerShell</strong> (or run <code>powershell -ExecutionPolicy Bypass -File "BOSCOV Boost.ps1"</code>).</li>
+      <li><strong>Approve the UAC prompt</strong> — the script backs everything up first, then applies the tweaks.</li>
+      <li>Changed your mind? Revert anytime: <code>powershell -File "BOSCOV Boost.ps1" -Revert</code></li>
+    </ol>
+  </div>
+
+  <h2 class="section" id="builds">All BOSCOV builds</h2>
+  <p class="section-sub">Everything I've published, in one place.</p>
+  <div class="grid">
+    <div class="build">
+      <h3>⚡ BOSCOV Boost</h3>
+      <p>Windows 10/11 RAM, startup &amp; telemetry booster. Backed up, reversible.</p>
+      <a href="https://github.com/BOSCOV-CD/boscov-tools">GitHub →</a>
+    </div>
+    <div class="build">
+      <h3>🎮 BOSCOV Optimizer</h3>
+      <p>BlueStacks 5 FPS &amp; smoothness optimizer. Backed up, reversible.</p>
+      <a href="https://github.com/BOSCOV-CD/boscov-tools">GitHub →</a>
+    </div>
+    <div class="build">
+      <h3>🤖 BOSCOV MD</h3>
+      <p>BOSCOV MD — Discord bot.</p>
+      <a href="https://github.com/BOSCOV-CD/boscov-md">GitHub →</a>
+    </div>
+    <div class="build">
+      <h3>🤖 BOSCOV MD Bot</h3>
+      <p>BOSCOV MD bot build.</p>
+      <a href="https://github.com/BOSCOV-CD/boscov-md-bot">GitHub →</a>
+    </div>
+    <div class="build">
+      <h3>🤖 BOSCOV S-MD</h3>
+      <p>BOSCOV S-MD build.</p>
+      <a href="https://github.com/BOSCOV-CD/BOSCOV-S-MD">GitHub →</a>
+    </div>
+    <div class="build">
+      <h3>☁️ BOSCOV MD Hosting</h3>
+      <p>Hosting setup for BOSCOV MD.</p>
+      <a href="https://github.com/BOSCOV-CD/boscov-md-hosting">GitHub →</a>
+    </div>
+    <div class="build">
+      <h3>💬 BOSCOV WA-MD</h3>
+      <p>BOSCOV WhatsApp-MD build.</p>
+      <a href="https://github.com/BOSCOV-CD/-boscov-wa-md">GitHub →</a>
+    </div>
+  </div>
+
+  <h2 class="section" id="why">Why BOSCOV</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Safe by design</strong> — every change is backed up before it's made, and one command reverts everything.</li>
+      <li><strong>100% local</strong> — no telemetry, no data collection, no network calls.</li>
+      <li><strong>Free forever</strong> — download, use, share.</li>
+    </ul>
+  </div>
+
 </main>
-<footer>BOSCOV Tools &copy; 2026 - Built by BOSCOV</footer>
+<footer>
+  BOSCOV Tools © 2026 — Built by BOSCOV<br>
+  <a href="https://github.com/BOSCOV-CD">github.com/BOSCOV-CD</a>
+</footer>
 </body>
 </html>
-
-
