@@ -1,0 +1,61 @@
+HOW TO GET "BOSCOV BOOST" ON GOOGLE - STEP BY STEP
+===================================================
+
+STEP 1 - Create a GitHub account (5 min)
+----------------------------------------
+1. Go to https://github.com/signup
+2. Pick a username with your brand in it, e.g. "boscov" or "boscov-tools"
+   (this name becomes part of your links, so choose well)
+
+STEP 2 - Create the repository (2 min)
+--------------------------------------
+1. Click the + (top right) -> New repository
+2. Name it:  boscov-tools
+3. Set it to Public
+4. Check "Add a README file"
+5. Click Create repository
+
+STEP 3 - Upload your files (5 min)
+----------------------------------
+1. On the repo page click "Add file" -> "Upload files"
+2. Drag in these 3 files:
+   - README.md        (overwrites the auto-generated one)
+   - BOSCOV Boost.ps1
+   - BOSCOV Optimizer.ps1
+3. Click "Commit changes"
+
+STEP 4 - Put the landing page online (5 min)
+--------------------------------------------
+1. In the repo click "Add file" -> "Create new file"
+2. Name it exactly:  index.html
+3. Copy-paste everything from index.html (in this BOSCOV-Online folder) into it
+4. IMPORTANT: replace "YOUR-USERNAME" in the download links (2 places)
+   with your GitHub username
+5. Commit
+6. Go to Settings -> Pages -> under "Branch" select "main", click Save
+7. Wait 1-2 minutes. Your site is live at:
+   https://YOUR-USERNAME.github.io/boscov-tools/
+
+STEP 5 - Get on Google FAST (10 min)
+------------------------------------
+1. Go to https://search.google.com/search-console
+2. Add property -> URL prefix -> paste your GitHub Pages URL
+3. Verify ownership (the "HTML tag" method works well with GitHub Pages)
+4. After verifying, use "URL Inspection" (top search bar),
+   paste your site URL, click "Request Indexing"
+5. Google usually lists a brand-new unique name like "BOSCOV Boost"
+   within a few days to 2 weeks
+
+STEP 6 - Boost your ranking (ongoing)
+-------------------------------------
+- Share the link everywhere you post (YouTube description, Discord, TikTok bio)
+- Make a short YouTube/TikTok video titled "BOSCOV Boost - make your PC faster"
+  and put the link in the description. Google ranks pages that get clicks.
+- Every time you build something new, add it to the same site/repo.
+  That is how "BOSCOV" becomes a known brand.
+
+EVERY NEW BUILD AFTER THIS:
+---------------------------
+1. Add the file + a section to the repo and index.html
+2. Request indexing again in Search Console
+3. Post the link on social media
